@@ -9,14 +9,14 @@ namespace RPSLS
     public class Gesture
     {
         public string name;
-        public string beats;
-        public string attackWords;
+        public string[] beats;
+        public string[] attackWords;
 
-        public Gesture(string name, string beats, string attackWords)
+        public Gesture(string name, string[] beats, string[] attackWords)
         {
             this.name = name;
             this.beats = beats;
-            this.attackWords = attackWords
+            this.attackWords = attackWords;
         }
     }
 }
