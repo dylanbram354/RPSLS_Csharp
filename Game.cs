@@ -43,7 +43,7 @@ namespace RPSLS
 
         public void GameRound()
         {
-            playerOne.gesture.name = "";
+            playerOne.gesture.name = ""; 
             playerTwo.gesture.name = "";
             while (playerOne.gesture.name == playerTwo.gesture.name)
             {

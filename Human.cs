@@ -26,7 +26,8 @@ namespace RPSLS
                 {
                     if (userChoice == option.name)
                     {
-                        gesture = option;
+                        gesture = new Gesture(option.name, option.beats, option.attackWords);
+                        break;
                     }
                 }
                 if (gesture == initial)

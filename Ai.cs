@@ -17,8 +17,8 @@ namespace RPSLS
         {
             Random random = new Random();
             int randomIndex = random.Next(gestureOptions.Length);
-            Gesture gesture = gestureOptions[randomIndex];
-            this.gesture = gesture;
+            Gesture tempGesture = gestureOptions[randomIndex];
+            this.gesture = new Gesture(tempGesture.name, tempGesture.beats, tempGesture.attackWords);
             return gesture;
         }
     }
